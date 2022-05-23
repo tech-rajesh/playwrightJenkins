@@ -8,7 +8,7 @@ const config: PlaywrightTestConfig = {
         viewport: null,
         headless: false,
         channel: "chrome",
-        screenshot:"only-on-failure",
+        screenshot:"on",
         video: "on",
         baseURL: "https://reqres.in/api/users",
         
