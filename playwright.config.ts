@@ -21,8 +21,9 @@ const config: PlaywrightTestConfig = {
     },
 
     //testMatch: ["apitest/sampleREST_API.test.ts"],
-    testMatch: ["locatorAPI/locatorIndetail.test.ts"],
+    //testMatch: ["locatorAPI/locatorIndetail.test.ts"],
     //testMatch: ["visual-comparsion/visual.test.ts"],
+	testMatch: ["authExample/authTest.ts"],
     retries: 0,
     reporter: [ ["dot"], ["json", {outputFile: "test-result.json"}]]
 
