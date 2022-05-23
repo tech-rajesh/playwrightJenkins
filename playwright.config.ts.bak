@@ -1,0 +1,30 @@
+import { PlaywrightTestConfig } from "@playwright/test";
+
+const config: PlaywrightTestConfig = {
+
+
+    use: {
+
+        viewport: null,
+        headless: false,
+        channel: "chrome",
+        screenshot:"only-on-failure",
+        video: "retry-with-video",
+        baseURL: "https://reqres.in/api/users",
+
+
+        launchOptions: {
+            args: ["--start-maximized"]
+        }
+
+    },
+
+    //testMatch: ["test/amazonSearch.test.ts"],
+    testMatch: ["visual-comparsion/visual.test.ts"],
+    retries: 0,
+    reporter: [ ["dot"], ["json", {outputFile: "test-result.json"}]]
+
+
+}
+
+export default config;
